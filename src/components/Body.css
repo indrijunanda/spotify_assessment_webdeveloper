@@ -1,0 +1,109 @@
+.body {
+  padding: 30px;
+  flex: 0.8;
+  height: 100vh;
+  color: white;
+  overflow-y: overlay;
+  background: #212121
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.body-info {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.body-info>img {
+  height: 20vw;
+  margin: 0 20px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.body-infoText {
+  flex: 1;
+}
+
+.body-infoText>h2 {
+  font-size: 83px;
+  margin-bottom: 10px;
+}
+
+.body-playlist {
+  margin: 1em;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+
+.playlistCard {
+  width: 209.59px;
+  height: 287.59px;
+  background-color: #000000;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.playlistCard:hover {
+  background-color: rgb(63, 63, 63);
+}
+
+.playlistCard-wrapper {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.playlistCard-wrapper>.card-thumb {
+  position: relative;
+  width: 177px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+
+.card-thumb>img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.option{
+  color: #ffffff;
+  position: relative;
+  bottom: -10px;
+  left: 10rem;
+}
+
+.option:hover{
+  color: #1db954;
+}
+
+.playButtonPlaylist {
+  width: 50px;
+  height: 50px;
+  background-color: #1db954;
+  position: absolute;
+  right: 5px;
+  bottom: -0.5rem;
+  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.568);
+}
+
+
+.playButtonPlaylist>svg {
+  fill: #fff;
+}
+
+.card-info {
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+}
